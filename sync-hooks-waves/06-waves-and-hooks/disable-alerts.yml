@@ -6,8 +6,8 @@ metadata:
   labels:
     codefresh.io/cert: disable-job  
   annotations:
-  	argocd.argoproj.io/sync-wave: "20"
-	argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/hook: PreSync
 spec:
   template:
     spec:
@@ -18,4 +18,4 @@ spec:
           - "sleep"
           - "10"
       restartPolicy: Never
-  backoffLimit: 2    
+  backoffLimit: 2
